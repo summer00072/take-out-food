@@ -9,7 +9,7 @@ function bestCharge(selectedItems) {
 	let discounts = ''; 
 	let orderDetail = ''
 	allItems = loadAllItems();
-	selectedItem = itemsNumber(selectedItems, allItems);	
+	selectedItem = recordItems(selectedItems, allItems);	
 	for (let k = 0; k < selectedItem.length; k++) {
 		let temp1 = selectedItem[k].price * selectedItem[k].num;
 		initialPrice += temp1;
@@ -24,7 +24,7 @@ function bestCharge(selectedItems) {
 	return orderDetail;
 	
 
-	function itemsNumber(selectedItems, allItems) {
+	function recordItems(selectedItems, allItems) {
 		let items = [];
 		let id_value,price_value,name_value,num_value;
 		for (let i = 0; i < selectedItems.length; i++){
