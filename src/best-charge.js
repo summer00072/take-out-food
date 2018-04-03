@@ -76,7 +76,7 @@ function bestCharge(selectedItems) {
 		}
 		if (discount1 >= discount2.value) {
 			finalPrice = initialPrice - discount1;
-			discounts = '-----------------------------------\n使用优惠：\n'+promotion[0].type+'，省'+discount1+'元\n'
+			discounts = '-----------------------------------\n使用优惠:\n'+promotion[0].type+'，省'+discount1+'元\n'
 			+'-----------------------------------\n'+'总计：'+finalPrice+'元\n'
 			+'===================================';
 			return discounts;
@@ -88,7 +88,7 @@ function bestCharge(selectedItems) {
 				discountItem = discount2.item1+discount2.item2;
 			}
 			finalPrice = initialPrice - discount2.value;
-			discounts = '-----------------------------------\n使用优惠：\n'+promotion[1].type+'('+discountItem+')，省'+discount2.value+'元\n'
+			discounts = '-----------------------------------\n使用优惠:\n'+promotion[1].type+'('+discountItem+')，省'+discount2.value+'元\n'
 			+'-----------------------------------\n'+'总计：'+finalPrice+'元\n'
 			+'===================================';
 			return discounts;
@@ -96,4 +96,4 @@ function bestCharge(selectedItems) {
 	}
   /*TODO*/
 };
-module.exports = bestCharge();
+//module.exports = bestCharge();
